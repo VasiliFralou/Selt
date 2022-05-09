@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ASProject/Selt/app/src/main/res/layout/activity_main.xml" value="0.36822916666666666" />
+        <entry key="..\:/ASProject/Selt/app/src/main/res/drawable/ic_add.xml" value="0.1" />
+        <entry key="..\:/ASProject/Selt/app/src/main/res/layout/activity_main.xml" value="0.225" />
         <entry key="..\:/ASProject/Selt/app/src/main/res/layout/content_main.xml" value="0.36822916666666666" />
         <entry key="..\:/ASProject/Selt/app/src/main/res/layout/fragment_first.xml" value="0.36822916666666666" />
+        <entry key="..\:/ASProject/Selt/app/src/main/res/layout/fragment_list_ads.xml" value="0.36770833333333336" />
+        <entry key="..\:/ASProject/Selt/app/src/main/res/layout/fragment_main.xml" value="0.36822916666666666" />
+        <entry key="..\:/ASProject/Selt/app/src/main/res/layout/fragment_new_ads.xml" value="0.225" />
         <entry key="..\:/ASProject/Selt/app/src/main/res/layout/fragment_second.xml" value="0.36822916666666666" />
+        <entry key="..\:/ASProject/Selt/app/src/main/res/layout/item_list_ads.xml" value="0.2388888888888889" />
       </map>
     </option>
   </component>

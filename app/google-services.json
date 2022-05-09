@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "235135643688",
+    "project_id": "selt-3eb7f",
+    "storage_bucket": "selt-3eb7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235135643688:android:6851326b72b106e431851d",
+        "android_client_info": {
+          "package_name": "by.vfdev.selt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235135643688-6at7omsgc6hfd5uip42o328q2orgdb3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfuXX9rMT_2mLoNS2JyosUzBDoZ4cvpwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235135643688-6at7omsgc6hfd5uip42o328q2orgdb3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
