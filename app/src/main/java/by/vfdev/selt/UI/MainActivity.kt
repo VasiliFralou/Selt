@@ -1,6 +1,5 @@
-package by.vfdev.selt
+package by.vfdev.selt.UI
 
-import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -8,7 +7,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import android.view.Menu
 import android.view.MenuItem
-import android.webkit.MimeTypeMap
+import by.vfdev.selt.R
 import by.vfdev.selt.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

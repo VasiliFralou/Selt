@@ -1,4 +1,4 @@
-package by.vfdev.selt
+package by.vfdev.selt.UI
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import by.vfdev.selt.Model.Ads
+import by.vfdev.selt.R
+import by.vfdev.selt.loadImage
 
 class AdsListAdapter (var mContext: Context, var adsList:List<Ads>):
     RecyclerView.Adapter<AdsListAdapter.ListViewHolder>()

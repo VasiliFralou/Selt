@@ -1,13 +1,13 @@
 <resources>
     <style name="Theme.Selt" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/mainColor</item>
-        <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="colorPrimary">@color/bgColor</item>
+        <item name="colorPrimaryDark">@color/bgColor</item>
         <item name="colorAccent">@color/white</item>
     </style>
 
     <style name="Theme.Selt.NoActionBar">
-        <item name="colorPrimary">@color/mainColor</item>
-        <item name="colorPrimaryVariant">@color/mainColor</item>
+        <item name="colorPrimary">@color/bgColor</item>
+        <item name="colorPrimaryVariant">@color/bgColor</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

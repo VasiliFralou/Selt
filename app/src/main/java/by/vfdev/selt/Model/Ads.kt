@@ -1,4 +1,4 @@
-package by.vfdev.selt
+package by.vfdev.selt.Model
 
 import com.google.firebase.database.Exclude
 

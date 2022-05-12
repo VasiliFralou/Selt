@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/MainFragment"
-        android:name="by.vfdev.selt.MainFragment"
+        android:name="by.vfdev.selt.UI.MainFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_list_ads">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/NewAdsFragment"
-        android:name="by.vfdev.selt.NewAdsFragment"
+        android:name="by.vfdev.selt.UI.NewAdsFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_new_ads">
 

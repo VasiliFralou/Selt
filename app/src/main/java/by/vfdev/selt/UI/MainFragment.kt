@@ -1,16 +1,17 @@
-package by.vfdev.selt
+package by.vfdev.selt.UI
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
-import android.widget.GridLayout
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
+import by.vfdev.selt.ViewModel.AdsViewModel
+import by.vfdev.selt.Model.Ads
+import by.vfdev.selt.R
 import by.vfdev.selt.databinding.FragmentListAdsBinding
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
@@ -33,7 +34,6 @@ class MainFragment : Fragment(R.layout.fragment_list_ads) {
         binding.listAdsRV.setHasFixedSize(true)
         binding.listAdsRV.layoutManager = GridLayoutManager(
             requireActivity(), 1)
-        binding.myDataLoaderProgressBar.visibility = View.VISIBLE
 
         mAdsList = ArrayList()
         Log.e("!!!", mAdsList.toString())
@@ -46,8 +46,6 @@ class MainFragment : Fragment(R.layout.fragment_list_ads) {
 
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(requireActivity(),error.message, Toast.LENGTH_SHORT).show()
-                binding.myDataLoaderProgressBar.visibility = View.INVISIBLE
-
             }
 
             @SuppressLint("NotifyDataSetChanged")
@@ -60,8 +58,6 @@ class MainFragment : Fragment(R.layout.fragment_list_ads) {
 
                 }
                 listAdapter.notifyDataSetChanged()
-                binding.myDataLoaderProgressBar.visibility = View.GONE
-
             }
 
         })

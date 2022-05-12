@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    tools:context=".MainFragment">
+    android:background="@color/bgColor"
+    tools:context=".UI.MainFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listAdsRV"
@@ -17,13 +17,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item_list_ads" />
-
-    <ProgressBar
-        android:id="@+id/myDataLoaderProgressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:indeterminateBehavior="cycle"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
