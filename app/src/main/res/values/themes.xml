@@ -1,18 +1,93 @@
-<resources>
-    <style name="Theme.Selt" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/bgColor</item>
-        <item name="colorPrimaryDark">@color/bgColor</item>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Selt"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorPrimaryVariant">@color/mainColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/mainColor</item>
+        <item name="colorSecondaryVariant">@color/mainColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item
+            name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:fontFamily">@font/bretan_pro</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#FFF</item>
+        <item name="boxStrokeWidth">10dp</item>
+    </style>
+
+    <style name="LoginTextInputOuterFieldStyle"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="LoginTextInputInnerFieldStyle"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="LTILSWhite"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="LoginTextInputOuterFieldStyleWhite"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="TextLabel" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorPrimary">@color/white</item>
         <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">#2E7D32</item>
+        <item name="colorControlActivated">#1B5E20</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
     </style>
 
-    <style name="Theme.Selt.NoActionBar">
-        <item name="colorPrimary">@color/bgColor</item>
-        <item name="colorPrimaryVariant">@color/bgColor</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="LoginTextInputInnerFieldStyleWhite"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColorLink">@color/white</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+
     </style>
 
-    <style name="Theme.Selt.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Selt.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.Selt.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Selt.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
 </resources>

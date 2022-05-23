@@ -79,7 +79,7 @@ class NewAdsFragment : Fragment(R.layout.fragment_new_ads) {
         val myRef = database.getReference("ads_uploads")
 
         val uploadAds = Ads(
-            title = binding.nameEditText.text.toString().trim { it <= ' ' },
+            title = binding.titleET.text.toString().trim { it <= ' ' },
             imageUrl = imageUri.toString(),
             description =  binding.descriptionEditText.text.toString().trim { it <= ' ' }
         )

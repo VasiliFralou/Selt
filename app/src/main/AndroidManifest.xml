@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="by.vfdev.selt">
 
     <application
@@ -10,18 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Selt">
+        <activity
+            android:name=".UI.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".UI.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Selt.NoActionBar">
-
-            <intent-filter>
-
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-
-            </intent-filter>
+            android:theme="@style/Theme.Selt">
         </activity>
     </application>
 
