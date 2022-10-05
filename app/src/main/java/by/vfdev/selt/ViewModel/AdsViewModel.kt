@@ -5,5 +5,5 @@ import by.vfdev.selt.Model.Ads
 
 class AdsViewModel : ViewModel() {
 
-    val adsList = mutableListOf<Ads?>()
+    val adsList = mutableListOf<Ads>()
 }

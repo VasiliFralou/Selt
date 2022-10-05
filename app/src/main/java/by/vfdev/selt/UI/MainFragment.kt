@@ -2,7 +2,6 @@ package by.vfdev.selt.UI
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
@@ -32,12 +31,19 @@ class MainFragment : Fragment(R.layout.fragment_list_ads) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.listAdsRV.setHasFixedSize(true)
-        binding.listAdsRV.layoutManager = GridLayoutManager(
-            requireActivity(), 1)
+        binding.listAdsRV.layoutManager = GridLayoutManager(requireActivity(), 1)
 
         mAdsList = ArrayList()
-        Log.e("!!!", mAdsList.toString())
-        listAdapter = AdsListAdapter(requireActivity(), mAdsList)
+
+        for (i in mAdsList) {
+            if (i.approved == true) {
+                adsVM.adsList.add(i)
+            }
+        }
+
+
+
+        listAdapter = AdsListAdapter(adsVM.adsList)
         binding.listAdsRV.adapter = listAdapter
 
         mStorage = FirebaseStorage.getInstance()
