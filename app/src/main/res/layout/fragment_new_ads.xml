@@ -28,7 +28,7 @@
                     android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/LoginTextInputInnerFieldStyleWhite"
+                    style="@style/TextInputLayoutStyle"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginTop="50dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -41,12 +41,11 @@
                         style="@style/TextLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Заголовок"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/LoginTextInputInnerFieldStyleWhite"
+                    style="@style/TextInputLayoutStyle"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +57,7 @@
                         android:id="@+id/descriptionEditText"
                         style="@style/TextLabel"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Описание" />
+                        android:layout_height="wrap_content" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,14 +74,14 @@
                         android:layout_margin="15dp"
                         android:padding="15dp"
                         android:textAllCaps="false"
-                        android:background="@drawable/bg_btn"
-                        android:text="Загруить фото" />
+                        android:background="@drawable/bg_btn" />
 
                     <ImageView
                         android:id="@+id/chooseImageView"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:layout_gravity="center" />
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
@@ -95,7 +93,6 @@
                     android:padding="15dp"
                     android:layout_gravity="center"
                     android:textAllCaps="false"
-                    android:text="Добавить объявление"
                     android:background="@drawable/bg_btn" />
 
 

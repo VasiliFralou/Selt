@@ -12,5 +12,9 @@
     <color name="secondColor">#434980</color>
     <color name="threeColor">#363D70</color>
 
+    <color name="head_and_footer_gray_item">#E9E9E9</color>
+    <color name="bg_item_card_view_color">#F5F5F5</color>
+    <color name="lightGray">#EFEFEF</color>
+
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
 </resources>

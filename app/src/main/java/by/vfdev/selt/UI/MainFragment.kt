@@ -2,6 +2,7 @@ package by.vfdev.selt.UI
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
@@ -42,8 +43,7 @@ class MainFragment : Fragment(R.layout.fragment_list_ads) {
         }
 
 
-
-        listAdapter = AdsListAdapter(adsVM.adsList)
+        listAdapter = AdsListAdapter(mAdsList)
         binding.listAdsRV.adapter = listAdapter
 
         mStorage = FirebaseStorage.getInstance()
@@ -61,7 +61,7 @@ class MainFragment : Fragment(R.layout.fragment_list_ads) {
                     val upload = teacherSnapshot.getValue(Ads::class.java)
                     upload!!.key = teacherSnapshot.key
                     mAdsList.add(upload)
-
+                    Log.e("!!!", mAdsList.toString())
                 }
                 listAdapter.notifyDataSetChanged()
             }

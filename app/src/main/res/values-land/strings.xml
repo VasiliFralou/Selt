@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="titleNewAds">Новое объявление</string>
+    <string name="todo">TODO</string>
+    <string name="title_head_tv">Доска объявлений</string>
+    <string name="text_email_et">Введите email</string>
+    <string name="text_password_et">Введите пароль</string>
+    <string name="text_button_in">Авторизоваться</string>
+    <string name="text_reset_password">Забыли пароль?</string>
+    <string name="text_help_tv">Помощь</string>
+    <string name="text_create_account_tv">Нет аккаунта? Зарегистрироваться</string>
 </resources>
