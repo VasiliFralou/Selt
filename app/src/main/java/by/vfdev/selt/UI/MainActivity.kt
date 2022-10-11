@@ -23,11 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
-
-        binding.btnAddAds.setOnClickListener {
-            if (navController.currentDestination?.id != R.id.NewAdsFragment)
-                navController.navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
