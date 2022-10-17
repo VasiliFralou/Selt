@@ -31,7 +31,7 @@ class AdsListAdapter (private val adsList:List<Ads>):
         val list = adsList[position]
 
         holder.binding.imgAds.loadImage(list.imageUrl)
-        holder.binding.titleAdsTV.text = list.approved.toString()
+        holder.binding.titleAdsTV.text = list.title.toString()
         holder.binding.descriptionAdsTV.text = list.description.toString()
     }
 
