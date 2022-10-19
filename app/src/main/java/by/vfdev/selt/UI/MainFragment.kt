@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import by.vfdev.selt.ViewModel.AdsViewModel
@@ -18,6 +20,7 @@ import com.google.firebase.storage.FirebaseStorage
 
 class MainFragment : Fragment(R.layout.fragment_list_ads) {
 
+    lateinit var navController: NavController
     private val binding by viewBinding(FragmentListAdsBinding::bind)
     private val adsVM : AdsViewModel by activityViewModels()
 
@@ -30,7 +33,7 @@ class MainFragment : Fragment(R.layout.fragment_list_ads) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        navController = findNavController()
         binding.listAdsRV.setHasFixedSize(true)
         binding.listAdsRV.layoutManager = GridLayoutManager(requireActivity(), 1)
 
