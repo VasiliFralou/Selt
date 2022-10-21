@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="by.vfdev.selt.UI.MainFragment"
-        tools:layout="@layout/fragment_list_ads">
+        tools:layout="@layout/fragment_main">
     </fragment>
 </navigation>
