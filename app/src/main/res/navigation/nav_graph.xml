@@ -9,18 +9,5 @@
         android:id="@+id/mainFragment"
         android:name="by.vfdev.selt.UI.MainFragment"
         tools:layout="@layout/fragment_list_ads">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/NewAdsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/NewAdsFragment"
-        android:name="by.vfdev.selt.UI.NewAdsFragment"
-        tools:layout="@layout/fragment_new_ads">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
