@@ -1,31 +1,25 @@
 <menu
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="by.vfdev.selt.UI.MainActivity">
 
     <item
         android:id="@+id/boardFragment"
         android:title="@string/title_board_item"
-        android:icon="@drawable/ic_ads_board"
-        app:showAsAction="never"
-        />
+        android:icon="@drawable/ic_ads_board" />
+
     <item
         android:id="@+id/mapFragment"
         android:title="@string/title_map_item"
-        android:icon="@drawable/ic_map"
-        app:showAsAction="never"
-        />
+        android:icon="@drawable/ic_map" />
+
     <item
-        android:id="@+id/addAdsFragment"
+        android:id="@+id/newAdsFragment"
         android:title="@string/title_add_ads_item"
-        android:icon="@drawable/ic_add_ads"
-        app:showAsAction="never"
-        />
+        android:icon="@drawable/ic_add_ads" />
+
     <item
         android:id="@+id/settingFragment"
         android:title="@string/title_setting_item"
-        android:icon="@drawable/ic_settings"
-        app:showAsAction="never"
-        />
+        android:icon="@drawable/ic_settings" />
 </menu>

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColor"
+    android:background="@color/white"
     tools:context=".UI.NewAdsFragment">
 
     <LinearLayout
@@ -17,84 +17,85 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/titleAdsMCV"
+            style="@style/MaterialCardView">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutAddAdsStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/titleET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/titleNewAds"
-                    android:textColor="@color/white"
-                    android:textSize="19sp"
-                    android:layout_marginTop="50dp"
-                    android:textStyle="bold" />
+                    android:hint="@string/text_add_ads_title_et"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/TextInputLayoutStyle"
-                    android:layout_marginHorizontal="25dp"
-                    android:layout_marginTop="50dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/descriptionAdsMCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/MaterialCardView">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/titleET"
-                        style="@style/TextLabel"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
-                </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutAddAdsStyle"
+                android:layout_width="match_parent">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/TextInputLayoutStyle"
-                    android:layout_marginHorizontal="25dp"
-                    android:layout_marginTop="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/descriptionEditText"
-                        style="@style/TextLabel"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                <MultiAutoCompleteTextView
+                    android:id="@+id/descriptionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:hint="@string/description_add_ads_et"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <Button
-                        android:id="@+id/button_choose_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="15dp"
-                        android:padding="15dp"
-                        android:textAllCaps="false"
-                        android:background="@drawable/bg_btn" />
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btnChooseMCV"
+                        style="@style/MaterialCardView"
+                        android:layout_marginTop="20dp">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button_choose_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_btn"
+                            android:text="@string/text_btn_add_ads_photo"
+                            android:textColor="@color/white" />
+                    </com.google.android.material.card.MaterialCardView>
 
                     <ImageView
                         android:id="@+id/chooseImageView"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="200dp"
+                        android:maxWidth="200dp"
                         android:layout_gravity="center"
                         android:contentDescription="@string/todo" />
 
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/upLoadBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:padding="15dp"
-                    android:layout_gravity="center"
-                    android:textAllCaps="false"
-                    android:background="@drawable/bg_btn" />
-
-
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnSendMCV"
+            style="@style/MaterialCardView"
+            android:layout_marginTop="20dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upLoadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_btn"
+                android:text="@string/text_btn_add_ads_upload"
+                android:textColor="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

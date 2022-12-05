@@ -25,6 +25,19 @@
         <item name="hintTextColor">#000000</item>
     </style>
 
+    <style name="TextInputLayoutAddAdsStyle"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <!-- Цвет неактивной подсказки -->
+        <item name="android:textColorHint">#4D000000</item>
+        <!-- Цвет активной подсказки -->
+        <item name="hintTextColor">#000000</item>
+    </style>
+
     <style name="MaterialCardView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

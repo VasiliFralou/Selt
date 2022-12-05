@@ -8,6 +8,18 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="by.vfdev.selt.UI.MainFragment"
-        tools:layout="@layout/fragment_main">
+        tools:layout="@layout/fragment_main" >
     </fragment>
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="by.vfdev.selt.UI.BoardFragment"
+        tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="by.vfdev.selt.UI.MapFragment"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/newAdsFragment"
+        android:name="by.vfdev.selt.UI.NewAdsFragment"
+        tools:layout="@layout/fragment_new_ads" />
 </navigation>

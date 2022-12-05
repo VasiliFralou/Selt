@@ -61,8 +61,6 @@
             android:id="@+id/btnInMCV"
             style="@style/MaterialCardView"
             android:layout_marginTop="20dp">
-
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnIn"
                 android:layout_width="match_parent"
