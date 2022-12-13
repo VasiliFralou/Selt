@@ -11,7 +11,7 @@
     <string name="text_button_in">Авторизоваться</string>
     <string name="text_reset_password">Забыли пароль?</string>
     <string name="text_help_tv">Помощь</string>
-    <string name="text_create_account_tv">Нет аккаунта? Зарегистрироваться</string>
+    <string name="text_create_account_tv">Нет аккаунта?</string>
     <string name="title_activity_login">Login Activity</string>
     <string name="title_board_item">Доска объявлений</string>
     <string name="title_map_item">Карта объявлений</string>
@@ -22,4 +22,7 @@
     <string name="description_add_ads_et">Введите описание</string>
     <string name="text_btn_add_ads_photo">Выбрать фото</string>
     <string name="text_btn_add_ads_upload">Отправить на проверку</string>
+    <string name="sign_up_tv">Зарегистрироваться</string>
+    <string name="return_text_password_et">Повторите пароль</string>
+    <string name="descriptionDetailAdsTV">Описание</string>
 </resources>

@@ -7,6 +7,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import by.vfdev.selt.Model.Ads
@@ -41,7 +44,7 @@ class BoardFragment : Fragment(R.layout.fragment_board) {
                 adsVM.adsList.add(i)
             }
         }
-        listAdapter = AdsListAdapter(mAdsList)
+        listAdapter = AdsListAdapter(mAdsList, this)
         binding.listAdsRV.adapter = listAdapter
 
         mStorage = FirebaseStorage.getInstance()
@@ -65,5 +68,17 @@ class BoardFragment : Fragment(R.layout.fragment_board) {
             }
 
         })
+    }
+
+    fun showDetails(ads: Ads) {
+        adsVM.photoVM = ads.imageUrl
+        adsVM.titleVM = ads.title
+        adsVM.locationVM = ads.location
+        adsVM.descriptionVM = ads.description
+        adsVM.timeVM = ads.time
+        adsVM.dateVM = ads.date
+
+        val dialog = AdsDetailFragment()
+        dialog.show(requireActivity().supportFragmentManager, "customDialog")
     }
 }

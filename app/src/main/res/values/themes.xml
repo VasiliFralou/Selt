@@ -66,9 +66,22 @@
         <item name="cardBackgroundColor">@color/head_and_footer_gray_item</item>
     </style>
 
+    <style name="FooterCardViewStyle2"
+        parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/customCornerFooter2</item>
+        <item name="cardBackgroundColor">@color/head_and_footer_gray_item</item>
+    </style>
+
     <style name="customCornerFooter">
         <item name="cornerSizeBottomRight">25dp</item>
         <item name="cornerSizeBottomLeft">25dp</item>
+    </style>
+
+    <style name="customCornerFooter2">
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeTopRight">25dp</item>
     </style>
 
     <style name="TextLabel" parent="ThemeOverlay.AppCompat.Light">

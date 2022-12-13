@@ -13,7 +13,11 @@
     <fragment
         android:id="@+id/boardFragment"
         android:name="by.vfdev.selt.UI.BoardFragment"
-        tools:layout="@layout/fragment_board" />
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_boardFragment_to_adsDetailFragment"
+            app:destination="@id/adsDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapFragment"
         android:name="by.vfdev.selt.UI.MapFragment"
@@ -22,4 +26,9 @@
         android:id="@+id/newAdsFragment"
         android:name="by.vfdev.selt.UI.NewAdsFragment"
         tools:layout="@layout/fragment_new_ads" />
+    <fragment
+        android:id="@+id/adsDetailFragment"
+        android:name="by.vfdev.selt.AdsDetailFragment"
+        android:label="fragment_ads_detail"
+        tools:layout="@layout/fragment_ads_detail" />
 </navigation>

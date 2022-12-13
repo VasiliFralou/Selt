@@ -8,7 +8,7 @@
         android:gravity="bottom"
         android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context=".UI.LoginActivity">
+    tools:context=".UI.SignInActivity">
 
         <ImageView
             android:id="@+id/logo"
@@ -20,15 +20,13 @@
             android:contentDescription="@string/todo" />
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/emailMCV"
             style="@style/MaterialCardView">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/emailLayout"
                 style="@style/TextInputLayoutStyle">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/emailEt"
+                    android:id="@+id/emailSignInEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/text_email_et"
@@ -38,17 +36,15 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/passwordMCV"
             style="@style/MaterialCardView"
             android:layout_marginTop="20dp">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/passwordLayout"
                 style="@style/TextInputLayoutStyle"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/passET"
+                    android:id="@+id/passwordSignInEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/text_password_et"
@@ -100,15 +96,31 @@
                 android:textStyle="bold"/>
         </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="60dp"
-            android:text="@string/text_create_account_tv"
             android:layout_marginBottom="75dp"
-            android:textStyle="bold"
+            android:text="@string/text_create_account_tv"
             android:textColor="@color/black" />
-
+        <TextView
+            android:id="@+id/SignUpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="75dp"
+            android:text="@string/sign_up_tv"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
     </LinearLayout>
+
+</LinearLayout>
