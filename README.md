@@ -8,7 +8,7 @@
 
 
 ## :scroll: About the Project
-<b>Selt</b> Mobile application for finding lost things
+<b>Selt</b> is a free mobile application for finding lost things
 
 ## Architecture
 
